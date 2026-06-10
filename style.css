@@ -1,0 +1,156 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: black;
+}
+
+/* CANVAS STARS */
+#stars {                  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* MUSIC BUTTON */
+.music-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 12px;
+  border-radius: 50%;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.music-btn:hover {
+  background: rgba(255,255,255,0.3);
+  transform: scale(1.1);
+}
+
+/* SLIDER */
+.slider {
+  position: relative;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* SLIDE CENTER CONFIG */
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: all 1.5s ease;
+  pointer-events: none; /* Supaya tidak mengganggu klik navigasi */
+}
+
+.slide.active {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+  pointer-events: auto;
+}
+
+/* WRAPPER CONTENT */
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* FOTO CONFIGURATION */
+.slide-img {
+  width: 80vw;
+  max-width: 450px; /* Dioptimalkan agar pas di mobile & laptop */
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 60px rgba(255,255,255,0.1);
+  transition: transform 1.5s ease;
+  margin-bottom: 20px;
+}
+
+.slide.active .slide-img {
+  transform: scale(1);
+}
+
+.slide .slide-img {
+  transform: scale(1.08);
+}
+
+/* FIX: Menggabungkan dua deklarasi duplikat .slide h1 */
+.slide h1 {
+  text-align: center;
+  font-size: 2rem; /* Ukuran disesuaikan agar proporsional di HP */
+  max-width: 80%;
+  line-height: 1.5;
+  font-weight: 600;
+  text-shadow: 0 4px 10px rgba(0,0,0,0.7);
+  animation: fadeText 2s ease;
+}
+
+/* Responsivitas untuk layar laptop */
+@media (min-width: 768px) {
+  .slide h1 {
+    font-size: 2.6rem;
+  }
+}
+
+/* MANUAL NAVIGATION BUTTONS */
+.nav-controls {
+  position: fixed;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  gap: 40px;
+}
+
+.arrow-btn {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #ffdde1;
+}
+
+/* TEXT ANIMATION */
+@keyframes fadeText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

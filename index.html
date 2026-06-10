@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Untuk Kalian - ARCE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="stars"></canvas>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<button class="music-btn" id="musicBtn" onclick="toggleMusic()">🎵</button>
+
+<div class="slider">
+
+  <div class="slide active">
+    <h1>Hai, Perintis PMR (ARCE).<br>Ternyata, waktu berjalan secepat ini ya...</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Sebelum lanjut, klik dulu tombol musik di kanan atas (🎵) ya.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Sebentar... tunggu dulu ya, btw selamat udah wisuda. Temen-temen keren banget!</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Harusnya sekarang lagunya udah mulai terputar...</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Aku cuma mau bilang.... terima kasih.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima kasih karena udah mau berjuang bareng di PMR</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Dari awal di lab bio, sampai acara terakhir di laput.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima kasih sudah memercayakan jabatan ketua untukku.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Aku saaangat tau dan sadar, aku banyak kurangnya</h1>
+  </div>
+
+  <div class="slide">
+    <h1> Aku sangat bersyukur, punya temen-temen yang selalu ada dan support.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima kasih Diana, Desy, Sabrina. Temen-temen paling bisa menambal kekuranganku.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima kasih Falah, Yudha, Fikri, Nisa, Melinda. Temen-temen selalu bisa diandelin di berbgaa situasi.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima Kasih Qotrun, Ismi, Fandi, Rizky. Temen-temen paaaling sabar kalau direpotin.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Pasti capek ya... punya ketua kayak aku? Haha.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Banyak banget ga bisanya, kurang bisa diandelin, ga bisa juga jadi contoh yang baik...</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terlalu sering bercanda, gampang marah-marah dan banyak lagi.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Maaf ya ... kalau selama ini belum bisa jadi ketua ideal buat temen-temen.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Maaf ya ... aku sering bikin temen-temen jengkel dan kerepotan.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Terima kasih sudah hadir sebagai bagian penting dalam perjalananku.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Aku ga bakal lupa sama apa yang pernah kita lewati dan jalani bersama.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Mulai dari rapat, kumpul santai, bercanda bareng, sampai persiapan event. Dari yang enak sampai yang ga enak.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Aku seneng dan bangga banget bisa ketemu kalian semua.</h1>
+  </div>
+
+  <div class="slide">
+    <h1> maaf ya, cuma web sederhana ini yang bisa aku kasih.</h1>
+  </div>
+
+  <div class="slide">
+    <h1>Semoga temen-temen dapat yang terbaik di masa depan!</h1>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img10.jpg" class="slide-img" alt="Sampai Jumpa">
+      <h1>Terima kasih banyak... dan ... sampai jumpa di kereta yang lain 🚂</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img1.jpg" class="slide-img" alt="First Meeting">
+      <h1>First Meeting ✨</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img2.jpg" class="slide-img" alt="Pemilihan BPH">
+      <h1>Pemilihan BPH 🗳️</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img4.jpg" class="slide-img" alt="Expo">
+      <h1>Momen Expo! 🎪</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img7.jpg" class="slide-img" alt="Oprec">
+      <h1>Open Recruitment 📝</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img6.jpg" class="slide-img" alt="Makrab">
+      <h1>Makrab Seru Part 1 ⛺</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img5.jpg" class="slide-img" alt="Makrab">
+      <h1>Makrab Seru Part 2 🌌</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img8.jpg" class="slide-img" alt="Pengukuhan">
+      <h1>Hari Pengukuhan 🎓</h1>
+    </div>
+  </div>
+
+  <div class="slide">
+    <div class="content">
+      <img src="img9.jpg" class="slide-img" alt="Pengukuhan">
+      <h1>Resmi Dikukuhkan! ❤️</h1>
+    </div>
+  </div>
+
+</div>
+
+<div class="nav-controls">
+  <button class="arrow-btn" onclick="prevSlide()">❮</button>
+  <button class="arrow-btn" onclick="nextSlideManual()">❯</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
